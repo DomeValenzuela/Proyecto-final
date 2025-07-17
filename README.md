@@ -1,9 +1,11 @@
-# Proyecto Filogenias nuclear y mitocondrial de Dendrobatidae
+# Proyecto Filogenias mitocondriales de Dendrobatidae
 * Integrante: Doménica Valenzuela
 
 ## Propósito del programa
 * El programa a desarrollarse pretende comparar dos filogenieas de miembros del género Dendrobates de la familia Dendrobatidae, una de ellas será creada a patir del gen mitocondrial Cytb y la otra del gen 16S rNA que han pasado por un alineamiento y control de calidad.
-
+  
+## Foto
+![rana](https://upload.wikimedia.org/wikipedia/commons/9/9e/Dendrobates.tinctorius.7037.jpg)
 
 ## Q2. Requisitos
 * Git-Bash
@@ -18,8 +20,6 @@
 * Mitocondriales (resultados,fasta)
 * resultados (alineados, atom, trees)
   
-## Q4. Sube una foto que represente tu organismo o grupo de organismo.
-![rana](https://upload.wikimedia.org/wikipedia/commons/9/9e/Dendrobates.tinctorius.7037.jpg)
 
 # Pasos a seguir y lista de comandos
 * Descargar las secuencias genéticas usando esearch (genes Cytb y 16S)
@@ -60,3 +60,7 @@ awk '/^>/ {especie=substr($0,2); if(!(especie in seen)){seen[especie]=1; print $
   module load iqtree/2.2.2.6
   for filogeniam in muscle_*_filtrado.fasta; do iqtree2 -s $filogeniam; done
   
+*Abrir los archivos en Figtree
+
+# Resultados
+
