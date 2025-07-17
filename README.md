@@ -2,20 +2,20 @@
 * Integrante: Doménica Valenzuela
 
 ## Propósito del programa
-* El programa a desarrollarse pretende comparar dos filogenieas de miembros del género Dendrobates de la familia Dendrobatidae, una de ellas será creada a patir de las secuencias de 3 genes nucleares (TYR, POMC y BDNF) y la otra, de 2 genes mitocondriales (Cytb y 16S rNA) que han pasado por un alineamiento y control de calidad.
+* El programa a desarrollarse pretende comparar dos filogenieas de miembros del género Dendrobates de la familia Dendrobatidae, una de ellas será creada a patir del gen mitocondrial Cytb y la otra del gen 16S rNA que han pasado por un alineamiento y control de calidad.
 
 
 ## Q2. Requisitos
 * Git-Bash
-* Fasqc
 * Muscle
 * Iq-tree
 * Atom
-* R
+* Figtree
 
 ## Estructura de carpetas
-* ProyectoFinal (data, resultados)
-* data (genesfasta, fastqc)
+* Final (GENES, PROGRAMAS, SCRIPTS)
+* GENES (mitocondriales)
+* Mitocondriales (resultados,fasta)
 * resultados (alineados, atom, trees)
 
 ## Pasos a seguir y comandos
@@ -38,3 +38,5 @@
   
 ## Q4. Sube una foto que represente tu organismo o grupo de organismo.
 ![alt text](https://multimedia20stg.blob.core.windows.net/especiesreduced/DSC07211.jpg)
+
+#Lista de comandos
