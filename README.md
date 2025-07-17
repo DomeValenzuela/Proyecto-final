@@ -63,4 +63,5 @@ awk '/^>/ {especie=substr($0,2); if(!(especie in seen)){seen[especie]=1; print $
 *Abrir los archivos en Figtree
 
 # Resultados
+![arbol](file:///Users/macbook/Desktop/Captura%20de%20pantalla%202025-07-16%20a%20la(s)%2020.01.57.png)
 
