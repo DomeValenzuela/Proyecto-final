@@ -50,6 +50,12 @@
   Replace: >$1_$2
   Guardar docimentos como muscle_16S_atom.fasta y muscle_Cytb_atom.fasta
 
+*Pasar archivos a Hoffman
+1. Abrir terminal
+cd Desktop/
+scp dechavez@hoffman2.idre.ucla.edu:/u/scratch/d/dechavez/Bioinformatica-PUCE/RediseBio/DomenicaVP/Final/GENES/Mitocondriales/muscle_CYTB_atom_.fasta.treefile .
+scp dechavez@hoffman2.idre.ucla.edu:/u/scratch/d/dechavez/Bioinformatica-PUCE/RediseBio/DomenicaVP/Final/GENES/Mitocondriales/muscle_16S_atom_.fasta.treefile .
+
 * Eliminar secuencias repetidas
 awk '/^>/ {especie=substr($0,2); if(!(especie in seen)){seen[especie]=1; print $0; flag=1} else {flag=0}} !/^>/ {if(flag) print}' muscle_16S_atom.fasta > muscle_16S_atom_filtrado.fasta
 
@@ -63,5 +69,5 @@ awk '/^>/ {especie=substr($0,2); if(!(especie in seen)){seen[especie]=1; print $
 *Abrir los archivos en Figtree
 
 # Resultados
-![arbol](file:///Users/macbook/Desktop/Captura%20de%20pantalla%202025-07-16%20a%20la(s)%2020.01.57.png)
+
 
