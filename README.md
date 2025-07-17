@@ -68,6 +68,5 @@ awk '/^>/ {especie=substr($0,2); if(!(especie in seen)){seen[especie]=1; print $
   
 *Abrir los archivos en Figtree
 
-# Resultados
 
 
